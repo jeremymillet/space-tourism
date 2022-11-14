@@ -34,17 +34,22 @@ p {
     z-index: -1;
     position: absolute;
     display: none;
-    
 }
 .background-home{
     display: flex;
     z-index: -1;
     position: absolute;
+    max-width: 1440px;
+}
+#home{
+    width: 1440px;
+    height: 764px;
+    
 }
 
 body {
     max-width: 1440px;
-    max-height: 900px;
+    min-height: 900px;
     font-family: 'Bellefair', serif;
     color: white;
 }
@@ -214,7 +219,7 @@ main {
 }
 
 /************************************************visible or not*****************************************************************/
-#moon,#mars,#europa,#titan,#commander,#mission-specialist,#pilot,#flight-engineer{
+#moon,#mars,#europa,#titan,#commander,#mission-specialist,#pilot,#flight-engineer,#launch-vehicle{
     display: none;
     height: 764px;
     width: 1440px;
@@ -451,4 +456,123 @@ main {
     width: fit-content;
 }
 
-/************************************************destination*****************************************************************/
+/************************************************technology*****************************************************************/
+.technology-accroche {
+    width: 50%;
+    margin-top: 76px;
+    display: flex;
+    flex-direction: column;
+}
+.technology-image {
+    width: 50%;
+    margin-top: 76px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.titre-technology{
+    display: flex;
+    width: 100%;
+    height: 34px;
+    margin-bottom: 100px;
+}
+
+.titre-technology div p {
+    display: flex;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgba(255, 255, 255, 0.10);
+    margin-right: 28px;
+}
+.titre-technology div h5{
+    color: white;
+}
+
+.container-technology-text{
+    width: 100%;
+    height: 303px;
+    margin-bottom: 115px;
+    margin-left:120px;
+}
+
+.grade{
+    width: 100%;
+    border-bottom: 15px;
+    display: flex;
+}
+.grade h4{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgba(255, 255, 255, 0.70);
+}
+.name-technology{
+    width: 100%;
+    height: auto;
+    margin-bottom: 17px;
+    display: flex;
+}
+.name-technology h2{
+    font-weight: 400;
+    font-size: 56px;
+    font-family: 'Bellefair', sans-serif;
+}
+.technology-accroche .text-technology {
+    width: 444px;
+}
+.technology-accroche .text-technology p {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+}
+.technology{
+    width: 132px;
+    height: 15px;
+    display:flex;
+    justify-content: space-between;
+}
+.button-technology{
+    width: 15%;
+    position: relative;
+    left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button-technology .cercle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.0);
+    border: solid 1px rgba(255, 255, 255, 0.20);
+    margin-bottom:32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-technology .cercle p{
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Bellefair', sans-serif;
+}
+.button-technology .cercle:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.image-technology{
+    width: 515px;
+    height: 527px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.image-technology img{
+    width: 100%;
+    height: 100%;
+}
