@@ -1,3 +1,10 @@
+@media (min-width:1441px) {
+    html{
+        display: flex;
+        justify-content: center;
+
+    }
+}
 h1 {
     font-size: 150px;
     font-family: 'Bellefair', serif;
@@ -30,28 +37,13 @@ p {
     font-size: 16px;
     font-family: 'Barlow', sans-serif;
 }
-.background-destination,.background-crew,.background-technology{
-    z-index: -1;
-    position: absolute;
-    display: none;
-}
-.background-home{
-    display: flex;
-    z-index: -1;
-    position: absolute;
-    max-width: 1440px;
-}
-#home{
-    width: 1440px;
-    height: 764px;
-    
-}
 
 body {
-    max-width: 1440px;
-    min-height: 900px;
     font-family: 'Bellefair', serif;
     color: white;
+    background-image: url("/img/home/background-home-desktop.jpg");
+    background-size: cover;
+    height: auto;
 }
 
 /************************************************header*****************************************************************/
@@ -71,8 +63,9 @@ header {
 }
 
 .logo-container img {
-    width: 48px;
-    height: 48px;
+    width: 100%;
+    height: auto;
+    max-width: 60px;
 }
 
 /************************************************nav*****************************************************************/
@@ -140,14 +133,9 @@ header {
 }
 
 /************************************************home*****************************************************************/
-main {
-    display: flex;
-}
-
 /************************************************accroche*****************************************************************/
 .accroche-container {
-    width: 450px;
-    height: 382px;
+    width: 60%;
     margin-left: 165px;
     margin-top: 251px;
     margin-right: 0px;
@@ -181,11 +169,9 @@ main {
 
 /************************************************button*****************************************************************/
 .explore-container {
-    width: 450px;
-    height: 450px;
+    width: 40%;
     background-color: transparent;
     margin-top: 271px;
-    margin-left: 298px;
     margin-bottom: 43px;
     border-radius: 50%;
     display: flex;
@@ -219,40 +205,36 @@ main {
 }
 
 /************************************************visible or not*****************************************************************/
-#moon,#mars,#europa,#titan,#commander,#mission-specialist,#pilot,#flight-engineer,#launch-vehicle{
+#moon,#mars,#europa,#titan,#commander,#mission-specialist,#pilot,#flight-engineer,#launch-vehicle,#spaceport,#space-capsule{
     display: none;
-    height: 764px;
-    width: 1440px;
+    width: 100%;
+    height: 769px;
+    
 }
-#visible {
+#home{
     display: flex;
-    z-index: 1;
+    height: 769px;
+    width: 100%;
 }
-.visible-img{
-    z-index: -1;
-    display: flex;
-    position: absolute;
-}
-.flex{
-    display: flex;
-    height: 764px;
-    width: 1440px;
-}
-/************************************************width-height*****************************************************************/
 
 /************************************************destination*****************************************************************/
 .destination-image {
-    width: 832px;
+    width: 60%;
     margin-top: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .destination-accroche {
-    width: 608px;
+    width: 40%;
+    margin-top: 174px;
 }
 .titre-destination {
     display: flex;
-    width: 382px;
+    margin-left: 30%;
+    width: 100%;
     height: 34px;
-    margin-left: 166.5px;
+    margin-bottom: 97px;
 }
 .titre-destination div p {
     display: flex;
@@ -265,13 +247,9 @@ main {
 .image-planet {
     width: 450px;
     height: 450px;
-    margin-left: 230px;
-    margin-top: 97px;
 }
-.destination-accroche {
-    width: 445px;
-    height: 472px;
-    margin-top: 174px;
+.destination{
+    width: 285.5px;
 }
 .destination ul {
     display: flex;
@@ -294,8 +272,17 @@ main {
     border-bottom: solid rgba(255, 255, 255, 1);
     color: #FFFFFF;
 }
+.destination ul li.selectioner-destination{
+    border-bottom: solid rgba(255, 255, 255, 1);
+    color: #FFFFFF;
+}
+.container-texte{
+   width: 100%;
+   max-width: 450px;
+}
 .destination-accroche .texte-destination {
     margin-bottom: 54px;
+    flex-wrap: wrap;
 }
 .destination-accroche .texte-destination p {
     font-family: 'Barlow', sans-serif;
@@ -442,6 +429,9 @@ main {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.20);
 }
+.crew .cercle.active-cercle{
+    background-color: rgba(255, 255, 255, 1);
+}
 .crew .cercle:hover{
     background-color: white;
     cursor: pointer;
@@ -556,6 +546,10 @@ main {
     align-items: center;
     justify-content: center;
 }
+.button-technology .cercle.active-cercle{
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
 .button-technology .cercle p{
     font-size: 32px;
     font-weight: 400;
@@ -564,6 +558,7 @@ main {
 .button-technology .cercle:hover{
     background-color: white;
     cursor: pointer;
+    color: black;
 }
 .image-technology{
     width: 515px;

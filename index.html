@@ -21,10 +21,6 @@
 </head>
 
 <body>
-    <img class="background-home" src="img/home/background-home-desktop.jpg" alt="">
-    <img class="background-destination" src="img/destination/background-destination-desktop.jpg" alt="">
-    <img class="background-crew" src="img/crew/background-crew-desktop.jpg" alt="">
-    <img class="background-technology" src="img/technology/background-technology-desktop.jpg" alt="">
     <header>
         <div class="logo-container">
             <img src="img/shared/logo.svg" alt="logo">
@@ -35,454 +31,526 @@
         <div class="nav-container">
             <ul>
                 <li id="home-button"
-                    onclick="displayImgHome(),displayImgNoneDestination(),displayImgNoneCrew(),displayImgNoneTechnology(),moonNone(),homeOn(),marsNone(),europaNone(),titanNone(),commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerNone()">
+                    onclick="homeOn(),moonNone(),marsNone(),europaNone(),titanNone(),commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerNone(),launchVehicleNone(),spaceCapsuleNone(),spaceportNone()">
                     <p>0 0</p> HOME
                 </li>
                 <li id="destination-button"
-                    onclick="displayImgDestination(),displayImgNoneHome(),displayImgNoneCrew(),displayImgNoneTechnology(),moonOn(),homeNone(),commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerNone()">
+                    onclick="moonNone(),homeNone(),marsNone(),europaNone(),titanNone(),commanderNone(),moonOn(),flightEngineerNone(),launchVehicleNone(),spaceCapsuleNone(),spaceportNone()">
                     <p>0 1</p> DESTINATION
                 </li>
-                <li id="crew-button"
-                    onclick="displayImgNoneHome(),displayImgNoneDestination(),displayImgCrew(),displayImgNoneTechnology(),moonNone(),homeNone(),marsNone(),europaNone(),titanNone(),commanderOn()">
+                <li id="crew-button" onclick="moonNone(),homeNone(),marsNone(),europaNone(),titanNone(),commanderOn(),flightEngineerNone(),launchVehicleNone(),spaceCapsuleNone(),spaceportNone()">
                     <p>0 2</p> CREW
                 </li>
                 <li id="technology-button"
-                    onclick="displayImgNoneCrew(),displayImgNoneHome(),displayImgNoneDestination(),displayImgTechnology(),moonNone(),homeNone(),marsNone(),europaNone(),titanNone(),commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerNone()">
+                    onclick="moonNone(),homeNone(),marsNone(),europaNone(),titanNone(),commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerNone(),launchVehicleOn(),spaceCapsuleNone(),spaceportNone()">
                     <p>0 3</p> TECHNOLOGY
                 </li>
             </ul>
         </div>
     </header>
     <div id="home">
-        <main>
-            <article class="accroche-container">
-                <div class="subtitle">
-                    <h5>SO, YOU WANT TO TRAVEL TO</h5>
-                </div>
-                <div class="title">
-                    <h1>SPACE</h1>
-                </div>
-                <div class="texte">
-                    <p>Let’s face it; if you want to go to space, you might as well
-                        genuinely go to outer space and not hover kind of on the edge
-                        of it. Well sit back, and relax because we’ll give you a truly
-                        out of this world experience!
-                    </p>
-                </div>
-            </article>
-            <article class="explore-container">
-                <div class="explore" onclick="displayImgDestination(),displayImgNoneHome(),moonOn(),homeNone()">
-                    <h4>EXPLORE</h4>
-                </div>
-            </article>
-        </main>
+        <article class="accroche-container">
+            <div class="subtitle">
+                <h5>SO, YOU WANT TO TRAVEL TO</h5>
+            </div>
+            <div class="title">
+                <h1>SPACE</h1>
+            </div>
+            <div class="texte">
+                <p>Let’s face it; if you want to go to space, you might as well
+                    genuinely go to outer space and not hover kind of on the edge
+                    of it. Well sit back, and relax because we’ll give you a truly
+                    out of this world experience!
+                </p>
+            </div>
+        </article>
+        <article class="explore-container">
+            <div class="explore" onclick="homeNone(),moonOn()">
+                <h4>EXPLORE</h4>
+            </div>
+        </article>
     </div>
     <div id="moon">
-        <div class="flex">
-            <article class="destination-image">
-                <div class="titre-destination">
-                    <div>
-                        <p>0 1</p>
-                    </div>
-                    <div>
-                        <h5>PICK YOUR DESTINATION</h5>
-                    </div>
-                </div>
-                <div class="image-planet">
-                    <img src="img/destination/image-moon.png" alt="">
-                </div>
-            </article>
-            <article class="destination-accroche">
-                <div class="destination">
-                    <ul>
-                        <li>MOON</li>
-                        <li onclick="titanNone(),europaNone(),moonNone(),marsOn()">MARS</li>
-                        <li onclick="titanNone(),europaOn(),moonNone(),marsNone()">EUROPA</li>
-                        <li onclick="titanOn(),europaNone(),moonNone(),marsNone()">TITAN</li>
-                    </ul>
+        <article class="destination-image">
+            <div class="titre-destination">
+                <div>
+                    <p>0 1</p>
                 </div>
                 <div>
-                    <div>
-                        <h2>MOON</h2>
-                    </div>
-                    <div class="texte-destination">
-                        <p> See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
-                            perspective and come back refreshed. While you’re there, take in some history by visiting
-                            the
-                            Luna 2
-                            and Apollo 11 landing sites.
-                        </p>
-                    </div>
-                    <div class="info-destination">
-                        <div class="avg-distance">
-                            <p>AVG. DISTANCE</p>
-                            <h5>384,400 KM</h5>
-                        </div>
-                        <div class="est-time">
-                            <p>EST. TRAVEL TIME</p>
-                            <h5>3 DAYS</h5>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </div>
-    <div id="mars">
-        <div class="flex">
-            <article class="destination-image">
-                <div class="titre-destination">
-                    <div>
-                        <p>0 1</p>
-                    </div>
-                    <div>
-                        <h5>PICK YOUR DESTINATION</h5>
-                    </div>
-                </div>
-                <div class="image-planet">
-                    <img src="img/destination/image-mars.png" alt="">
-                </div>
-            </article>
-            <article class="destination-accroche">
-                <div class="destination">
-                    <ul>
-                        <li onclick="moonOn(),marsNone(),titanNone(),europaNone()">MOON</li>
-                        <li>MARS</li>
-                        <li onclick="moonNone(),marsNone(),titanNone(),europaOn()">EUROPA</li>
-                        <li onclick="moonNone(),marsNone(),titanOn(),europaNone()">TITAN</li>
-                    </ul>
-                </div>
-                <div>
-                    <div>
-                        <h2>MARS</h2>
-                    </div>
-                    <div class="texte-destination">
-                        <p> Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest
-                            planetary mountain in our solar system. It’s two and a half times the size of Everest!
-                        </p>
-                    </div>
-                    <div class="info-destination">
-                        <div class="avg-distance">
-                            <p>AVG. DISTANCE</p>
-                            <h5>225 MIL. KM</h5>
-                        </div>
-                        <div class="est-time">
-                            <p>EST. TRAVEL TIME</p>
-                            <h5>9 MONTHS</h5>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </div>
-    <div id="europa">
-        <div class="flex">
-            <article class="destination-image">
-                <div class="titre-destination">
-                    <div>
-                        <p>0 1</p>
-                    </div>
-                    <div>
-                        <h5>PICK YOUR DESTINATION</h5>
-                    </div>
-                </div>
-                <div class="image-planet">
-                    <img src="img/destination/image-europa.png" alt="">
-                </div>
-            </article>
-            <article class="destination-accroche">
-                <div class="destination">
-                    <ul>
-                        <li onclick="moonOn(),marsNone(),titanNone(),europaNone()">MOON</li>
-                        <li onclick="moonNone(),marsOn(),titanNone(),europaNone()">MARS</li>
-                        <li>EUROPA</li>
-                        <li onclick="moonNone(),marsNone(),titanOn(),europaNone()">TITAN</li>
-                    </ul>
-                </div>
-                <div>
-                    <div>
-                        <h2>EUROPA</h2>
-                    </div>
-                    <div class="texte-destination">
-                        <p> The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream.
-                            With
-                            an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation
-                            in
-                            your snug wintery cabin.
-                        </p>
-                    </div>
-                    <div class="info-destination">
-                        <div class="avg-distance">
-                            <p>AVG. DISTANCE</p>
-                            <h5>628 MIL. KM</h5>
-                        </div>
-                        <div class="est-time">
-                            <p>EST. TRAVEL TIME</p>
-                            <h5>3 YEARS</h5>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </div>
-    <div id="titan">
-        <div class="flex">
-            <article class="destination-image">
-                <div class="titre-destination">
-                    <div>
-                        <p>0 1</p>
-                    </div>
-                    <div>
-                        <h5>PICK YOUR DESTINATION</h5>
-                    </div>
-                </div>
-                <div class="image-planet">
-                    <img src="img/destination/image-titan.png" alt="">
-                </div>
-            </article>
-            <article class="destination-accroche">
-                <div class="destination">
-                    <ul>
-                        <li onclick="moonOn(),marsNone(),titanNone(),europaNone()">MOON</li>
-                        <li onclick="moonNone(),marsOn(),titanNone(),europaNone()">MARS</li>
-                        <li onclick="moonNone(),marsNone(),titanNone(),europaOn()">EUROPA</li>
-                        <li>TITAN</li>
-                    </ul>
-                </div>
-                <div>
-                    <div>
-                        <h2>TITAN</h2>
-                    </div>
-                    <div class="texte-destination">
-                        <p> The only moon known to have a dense atmosphere other than Earth, Titan is a home away from
-                            home
-                            (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of
-                            Saturn.
-                        </p>
-                    </div>
-                    <div class="info-destination">
-                        <div class="avg-distance">
-                            <p>AVG. DISTANCE</p>
-                            <h5>1.6 BIL. KM</h5>
-                        </div>
-                        <div class="est-time">
-                            <p>EST. TRAVEL TIME</p>
-                            <h5>7 YEARS</h5>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </div>
-    <div id="commander">
-        <div class="flex">
-            <article class="crew-accroche">
-                <div class="titre-crew">
-                    <div>
-                        <p>0 2</p>
-                    </div>
-                    <div>
-                        <h5>MEET YOUR CREW</h5>
-                    </div>
-                </div>
-                <div class="container-crew-text">
-                    <div class="grade">
-                        <h4>COMMANDER</h4>
-                    </div>
-                    <div class="name">
-                        <h2>Douglas Hurley</h2>
-                    </div>
-                    <div class="text-crew">
-                        <p> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA
-                            astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
-                        </p>
-                    </div>
-                </div>
-                <div class="crew">
-                    <div class="cercle"></div>
-                    <div class="cercle"
-                        onclick="commanderNone(),missionSpecialistOn(),pilotNone(),flightEngineerNone()"></div>
-                    <div class="cercle"
-                        onclick="commanderNone(),missionSpecialistNone(),pilotOn(),flightEngineerNone()"></div>
-                    <div class="cercle"
-                        onclick="commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerOn()"></div>
-                </div>
-            </article>
-            <article class="crew-image">
-                <div class="image-staff">
-                    <img src="img/crew/image-douglas-hurley.png" alt="">
-                </div>
-            </article>
-        </div>
-    </div>
-    <div id="mission-specialist">
-        <div class="flex">
-            <article class="crew-accroche">
-                <div class="titre-crew">
-                    <div>
-                        <p>0 2</p>
-                    </div>
-                    <div>
-                        <h5>MEET YOUR CREW</h5>
-                    </div>
-                </div>
-                <div class="container-crew-text">
-                    <div class="grade">
-                        <h4>MISSION SPECIALIST </h4>
-                    </div>
-                    <div class="name">
-                        <h2>MARK SHUTTLEWORTH</h2>
-                    </div>
-                    <div class="text-crew">
-                        <p> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA
-                            astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
-                        </p>
-                    </div>
-                </div>
-                <div class="crew">
-                    <div class="cercle"
-                        onclick="commanderOn(),missionSpecialistNone(),pilotNone(),flightEngineerNone()"></div>
-                    <div class="cercle"></div>
-                    <div class="cercle"
-                        onclick="commanderNone(),missionSpecialistNone(),pilotOn(),flightEngineerNone()"></div>
-                    <div class="cercle"
-                        onclick="commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerOn()"></div>
-                </div>
-            </article>
-            <article class="crew-image">
-                <div class="image-staff">
-                    <img src="img/crew/image-mark-shuttleworth.png" alt="">
-                </div>
-            </article>
-        </div>
-    </div>
-    <div id="pilot">
-        <div class="flex">
-            <article class="crew-accroche">
-                <div class="titre-crew">
-                    <div>
-                        <p>0 2</p>
-                    </div>
-                    <div>
-                        <h5>MEET YOUR CREW</h5>
-                    </div>
-                </div>
-                <div class="container-crew-text">
-                    <div class="grade">
-                        <h4>PILOT</h4>
-                    </div>
-                    <div class="name">
-                        <h2>VICTOR GLOVER</h2>
-                    </div>
-                    <div class="text-crew">
-                        <p> Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space
-                            Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew
-                            member of Expedition 64, and served as a station systems flight engineer.
-                        </p>
-                    </div>
-                </div>
-                <div class="crew">
-                    <div class="cercle"
-                        onclick="commanderOn(),missionSpecialistNone(),pilotNone(),flightEngineerNone()"></div>
-                    <div class="cercle"
-                        onclick="commanderNone(),missionSpecialistOn(),pilotNone(),flightEngineerNone()"></div>
-                    <div class="cercle"></div>
-                    <div class="cercle"
-                        onclick="commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerOn()"></div>
-                </div>
-            </article>
-            <article class="crew-image">
-                <div class="image-staff">
-                    <img src="img/crew/image-victor-glover.png" alt="">
-                </div>
-            </article>
-        </div>
-    </div>
-    <div id="flight-engineer">
-        <div class="flex">
-            <article class="crew-accroche">
-                <div class="titre-crew">
-                    <div>
-                        <p>0 2</p>
-                    </div>
-                    <div>
-                        <h5>MEET YOUR CREW</h5>
-                    </div>
-                </div>
-                <div class="container-crew-text">
-                    <div class="grade">
-                        <h4>FLIGHT ENGINEER</h4>
-                    </div>
-                    <div class="name">
-                        <h2>ANOUSHEH ANSARI</h2>
-                    </div>
-                    <div class="text-crew">
-                        <p> Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space
-                            Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew
-                            member of Expedition 64, and served as a station systems flight engineer.
-                        </p>
-                    </div>
-                </div>
-                <div class="crew">
-                    <div class="cercle"
-                        onclick="commanderOn(),missionSpecialistNone(),pilotNone(),flightEngineerNone()"></div>
-                    <div class="cercle"
-                        onclick="commanderNone(),missionSpecialistOn(),pilotNone(),flightEngineerNone()"></div>
-                    <div class="cercle"
-                        onclick="commanderNone(),missionSpecialistNone(),pilotOn(),flightEngineerNone()"></div>
-                    <div class="cercle"></div>
-                </div>
-            </article>
-            <article class="crew-image">
-                <div class="image-staff">
-                    <img src="img/crew/image-anousheh-ansari.png" alt="">
-                </div>
-            </article>
-        </div>
-    </div>
-    <div id="launch-vehicle">
-        <div class="flex">
-            <div class="button-technology">
-                <div class="cercle" onclick="commanderOn(),missionSpecialistNone(),pilotNone(),flightEngineerNone()">
-                    <p>1</p>
-                </div>
-                <div class="cercle" onclick="commanderNone(),missionSpecialistOn(),pilotNone(),flightEngineerNone()">
-                    <p>2</p>
-                </div>
-                <div class="cercle" onclick="commanderNone(),missionSpecialistNone(),pilotOn(),flightEngineerNone()">
-                    <p>3</p>
+                    <h5>PICK YOUR DESTINATION</h5>
                 </div>
             </div>
-            <article class="technology-accroche">
-                <div class="titre-technology">
-                    <div>
-                        <p>0 3</p>
+            <div class="image-planet">
+                <img src="img/destination/image-moon.png" alt="">
+            </div>
+        </article>
+        <article class="destination-accroche">
+            <div class="destination">
+                <ul>
+                    <li class="selectioner-destination">MOON</li>
+                    <li onclick="titanNone(),europaNone(),moonNone(),marsOn()">MARS</li>
+                    <li onclick="titanNone(),europaOn(),moonNone(),marsNone()">EUROPA</li>
+                    <li onclick="titanOn(),europaNone(),moonNone(),marsNone()">TITAN</li>
+                </ul>
+            </div>
+            <div class="container-texte">
+                <div>
+                    <h2>MOON</h2>
+                </div>
+                <div class="texte-destination">
+                    <p> See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
+                        perspective and come back refreshed. While you’re there, take in some history by visiting
+                        the
+                        Luna 2
+                        and Apollo 11 landing sites.
+                    </p>
+                </div>
+                <div class="info-destination">
+                    <div class="avg-distance">
+                        <p>AVG. DISTANCE</p>
+                        <h5>384,400 KM</h5>
                     </div>
-                    <div>
-                        <h5>SPACE LAUNCH 101</h5>
+                    <div class="est-time">
+                        <p>EST. TRAVEL TIME</p>
+                        <h5>3 DAYS</h5>
                     </div>
                 </div>
-                <div class="container-technology-text">
-                    <div class="grade">
-                        <h4>THE TERMINOLOGY...</h4>
+            </div>
+        </article>
+    </div>
+    <div id="mars">
+        <article class="destination-image">
+            <div class="titre-destination">
+                <div>
+                    <p>0 1</p>
+                </div>
+                <div>
+                    <h5>PICK YOUR DESTINATION</h5>
+                </div>
+            </div>
+            <div class="image-planet">
+                <img src="img/destination/image-mars.png" alt="">
+            </div>
+        </article>
+        <article class="destination-accroche">
+            <div class="destination">
+                <ul>
+                    <li onclick="moonOn(),marsNone(),titanNone(),europaNone()">MOON</li>
+                    <li class="selectioner-destination">MARS</li>
+                    <li onclick="moonNone(),marsNone(),titanNone(),europaOn()">EUROPA</li>
+                    <li onclick="moonNone(),marsNone(),titanOn(),europaNone()">TITAN</li>
+                </ul>
+            </div>
+            <div class="container-texte">
+                <div>
+                    <h2>MARS</h2>
+                </div>
+                <div class="texte-destination">
+                    <p> Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest
+                        planetary mountain in our solar system. It’s two and a half times the size of Everest!
+                    </p>
+                </div>
+                <div class="info-destination">
+                    <div class="avg-distance">
+                        <p>AVG. DISTANCE</p>
+                        <h5>225 MIL. KM</h5>
                     </div>
-                    <div class="name-technology">
-                        <h2>LAUNCH VEHICLE</h2>
-                    </div>
-                    <div class="text-technology">
-                        <p> A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload
-                            from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is
-                            the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight
-                            on the launch pad!
-                        </p>
+                    <div class="est-time">
+                        <p>EST. TRAVEL TIME</p>
+                        <h5>9 MONTHS</h5>
                     </div>
                 </div>
-            </article>
-            <article class="technology-image">
-                <div class="image-technology">
-                    <img src="img/technology/image-launch-vehicle-portrait.jpg" alt="">
+            </div>
+        </article>
+
+    </div>
+    <div id="europa">
+
+        <article class="destination-image">
+            <div class="titre-destination">
+                <div>
+                    <p>0 1</p>
                 </div>
-            </article>
+                <div>
+                    <h5>PICK YOUR DESTINATION</h5>
+                </div>
+            </div>
+            <div class="image-planet">
+                <img src="img/destination/image-europa.png" alt="">
+            </div>
+        </article>
+        <article class="destination-accroche">
+            <div class="destination">
+                <ul>
+                    <li onclick="moonOn(),marsNone(),titanNone(),europaNone()">MOON</li>
+                    <li onclick="moonNone(),marsOn(),titanNone(),europaNone()">MARS</li>
+                    <li class="selectioner-destination">EUROPA</li>
+                    <li onclick="moonNone(),marsNone(),titanOn(),europaNone()">TITAN</li>
+                </ul>
+            </div>
+            <div class="container-texte">
+                <div>
+                    <h2>EUROPA</h2>
+                </div>
+                <div class="texte-destination">
+                    <p> The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream.
+                        With
+                        an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation
+                        in
+                        your snug wintery cabin.
+                    </p>
+                </div>
+                <div class="info-destination">
+                    <div class="avg-distance">
+                        <p>AVG. DISTANCE</p>
+                        <h5>628 MIL. KM</h5>
+                    </div>
+                    <div class="est-time">
+                        <p>EST. TRAVEL TIME</p>
+                        <h5>3 YEARS</h5>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </div>
+    <div id="titan">
+        <article class="destination-image">
+            <div class="titre-destination">
+                <div>
+                    <p>0 1</p>
+                </div>
+                <div>
+                    <h5>PICK YOUR DESTINATION</h5>
+                </div>
+            </div>
+            <div class="image-planet">
+                <img src="img/destination/image-titan.png" alt="">
+            </div>
+        </article>
+        <article class="destination-accroche">
+            <div class="destination">
+                <ul>
+                    <li onclick="moonOn(),marsNone(),titanNone(),europaNone()">MOON</li>
+                    <li onclick="moonNone(),marsOn(),titanNone(),europaNone()">MARS</li>
+                    <li onclick="moonNone(),marsNone(),titanNone(),europaOn()">EUROPA</li>
+                    <li class="selectioner-destination">TITAN</li>
+                </ul>
+            </div>
+            <div class="container-texte">
+                <div>
+                    <h2>TITAN</h2>
+                </div>
+                <div class="texte-destination">
+                    <p> The only moon known to have a dense atmosphere other than Earth, Titan is a home away from
+                        home
+                        (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of
+                        Saturn.
+                    </p>
+                </div>
+                <div class="info-destination">
+                    <div class="avg-distance">
+                        <p>AVG. DISTANCE</p>
+                        <h5>1.6 BIL. KM</h5>
+                    </div>
+                    <div class="est-time">
+                        <p>EST. TRAVEL TIME</p>
+                        <h5>7 YEARS</h5>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div id="commander">
+        <article class="crew-accroche">
+            <div class="titre-crew">
+                <div>
+                    <p>0 2</p>
+                </div>
+                <div>
+                    <h5>MEET YOUR CREW</h5>
+                </div>
+            </div>
+            <div class="container-crew-text">
+                <div class="grade">
+                    <h4>COMMANDER</h4>
+                </div>
+                <div class="name">
+                    <h2>DOUGLAS HURLEY</h2>
+                </div>
+                <div class="text-crew">
+                    <p> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA
+                        astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+                    </p>
+                </div>
+            </div>
+            <div class="crew">
+                <div class="cercle active-cercle"></div>
+                <div class="cercle" onclick="commanderNone(),missionSpecialistOn(),pilotNone(),flightEngineerNone()">
+                </div>
+                <div class="cercle" onclick="commanderNone(),missionSpecialistNone(),pilotOn(),flightEngineerNone()">
+                </div>
+                <div class="cercle" onclick="commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerOn()">
+                </div>
+            </div>
+        </article>
+        <article class="crew-image">
+            <div class="image-staff">
+                <img src="img/crew/image-douglas-hurley.png" alt="">
+            </div>
+        </article>
+    </div>
+    <div id="mission-specialist">
+
+        <article class="crew-accroche">
+            <div class="titre-crew">
+                <div>
+                    <p>0 2</p>
+                </div>
+                <div>
+                    <h5>MEET YOUR CREW</h5>
+                </div>
+            </div>
+            <div class="container-crew-text">
+                <div class="grade">
+                    <h4>MISSION SPECIALIST </h4>
+                </div>
+                <div class="name">
+                    <h2>MARK SHUTTLEWORTH</h2>
+                </div>
+                <div class="text-crew">
+                    <p> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA
+                        astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+                    </p>
+                </div>
+            </div>
+            <div class="crew">
+                <div class="cercle" onclick="commanderOn(),missionSpecialistNone(),pilotNone(),flightEngineerNone()">
+                </div>
+                <div class="cercle active-cercle"></div>
+                <div class="cercle" onclick="commanderNone(),missionSpecialistNone(),pilotOn(),flightEngineerNone()">
+                </div>
+                <div class="cercle" onclick="commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerOn()">
+                </div>
+            </div>
+        </article>
+        <article class="crew-image">
+            <div class="image-staff">
+                <img src="img/crew/image-mark-shuttleworth.png" alt="">
+            </div>
+        </article>
+    </div>
+
+    <div id="pilot">
+
+        <article class="crew-accroche">
+            <div class="titre-crew">
+                <div>
+                    <p>0 2</p>
+                </div>
+                <div>
+                    <h5>MEET YOUR CREW</h5>
+                </div>
+            </div>
+            <div class="container-crew-text">
+                <div class="grade">
+                    <h4>PILOT</h4>
+                </div>
+                <div class="name">
+                    <h2>VICTOR GLOVER</h2>
+                </div>
+                <div class="text-crew">
+                    <p> Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space
+                        Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew
+                        member of Expedition 64, and served as a station systems flight engineer.
+                    </p>
+                </div>
+            </div>
+            <div class="crew">
+                <div class="cercle" onclick="commanderOn(),missionSpecialistNone(),pilotNone(),flightEngineerNone()">
+                </div>
+                <div class="cercle" onclick="commanderNone(),missionSpecialistOn(),pilotNone(),flightEngineerNone()">
+                </div>
+                <div class="cercle active-cercle"></div>
+                <div class="cercle" onclick="commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerOn()">
+                </div>
+            </div>
+        </article>
+        <article class="crew-image">
+            <div class="image-staff">
+                <img src="img/crew/image-victor-glover.png" alt="">
+            </div>
+        </article>
+
+    </div>
+    <div id="flight-engineer">
+
+        <article class="crew-accroche">
+            <div class="titre-crew">
+                <div>
+                    <p>0 2</p>
+                </div>
+                <div>
+                    <h5>MEET YOUR CREW</h5>
+                </div>
+            </div>
+            <div class="container-crew-text">
+                <div class="grade">
+                    <h4>FLIGHT ENGINEER</h4>
+                </div>
+                <div class="name">
+                    <h2>ANOUSHEH ANSARI</h2>
+                </div>
+                <div class="text-crew">
+                    <p> Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space
+                        Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew
+                        member of Expedition 64, and served as a station systems flight engineer.
+                    </p>
+                </div>
+            </div>
+            <div class="crew">
+                <div class="cercle" onclick="commanderOn(),missionSpecialistNone(),pilotNone(),flightEngineerNone()">
+                </div>
+                <div class="cercle" onclick="commanderNone(),missionSpecialistOn(),pilotNone(),flightEngineerNone()">
+                </div>
+                <div class="cercle" onclick="commanderNone(),missionSpecialistNone(),pilotOn(),flightEngineerNone()">
+                </div>
+                <div class="cercle active-cercle"></div>
+            </div>
+        </article>
+        <article class="crew-image">
+            <div class="image-staff">
+                <img src="img/crew/image-anousheh-ansari.png" alt="">
+            </div>
+        </article>
+
+    </div>
+    <div id="launch-vehicle">
+        <div class="button-technology">
+            <div class="cercle active-cercle">
+                <p>1</p>
+            </div>
+            <div class="cercle" onclick="launchVehicleNone(),spaceCapsuleNone(),spaceportOn()">
+                <p>2</p>
+            </div>
+            <div class="cercle" onclick="launchVehicleNone(),spaceCapsuleOn(),spaceportNone()">
+                <p>3</p>
+            </div>
         </div>
+        <article class="technology-accroche">
+            <div class="titre-technology">
+                <div>
+                    <p>0 3</p>
+                </div>
+                <div>
+                    <h5>SPACE LAUNCH 101</h5>
+                </div>
+            </div>
+            <div class="container-technology-text">
+                <div class="grade">
+                    <h4>THE TERMINOLOGY...</h4>
+                </div>
+                <div class="name-technology">
+                    <h2>LAUNCH VEHICLE</h2>
+                </div>
+                <div class="text-technology">
+                    <p> A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload
+                        from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is
+                        the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight
+                        on the launch pad!
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="technology-image">
+            <div class="image-technology">
+                <img src="img/technology/image-launch-vehicle-portrait.jpg" alt="">
+            </div>
+        </article>
+    </div>
+    <div id="spaceport">
+        <div class="button-technology">
+            <div class="cercle" onclick="launchVehicleOn(),spaceCapsuleNone(),spaceportNone()">
+                <p>1</p>
+            </div>
+            <div class="cercle active-cercle">
+                <p>2</p>
+            </div>
+            <div class="cercle" onclick="launchVehicleNone(),spaceCapsuleOn(),spaceportNone()">
+                <p>3</p>
+            </div>
+        </div>
+        <article class="technology-accroche">
+            <div class="titre-technology">
+                <div>
+                    <p>0 3</p>
+                </div>
+                <div>
+                    <h5>SPACE LAUNCH 101</h5>
+                </div>
+            </div>
+            <div class="container-technology-text">
+                <div class="grade">
+                    <h4>THE TERMINOLOGY...</h4>
+                </div>
+                <div class="name-technology">
+                    <h2>SPACEPORT</h2>
+                </div>
+                <div class="text-technology">
+                    <p> A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the
+                        seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is
+                        ideally situated to take advantage of the Earth’s rotation for launch.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="technology-image">
+            <div class="image-technology">
+                <img src="img/technology/image-spaceport-portrait.jpg" alt="">
+            </div>
+        </article>
+    </div>
+    <div id="space-capsule">
+        <div class="button-technology">
+            <div class="cercle" onclick="launchVehicleOn(),spaceCapsuleNone(),spaceport()">
+                <p>1</p>
+            </div>
+            <div class="cercle" onclick="launchVehicleNone(),spaceCapsuleNone(),spaceportOn()">
+                <p>2</p>
+            </div>
+            <div class="cercle active-cercle">
+                <p>3</p>
+            </div>
+        </div>
+        <article class="technology-accroche">
+            <div class="titre-technology">
+                <div>
+                    <p>0 3</p>
+                </div>
+                <div>
+                    <h5>SPACE LAUNCH 101</h5>
+                </div>
+            </div>
+            <div class="container-technology-text">
+                <div class="grade">
+                    <h4>THE TERMINOLOGY...</h4>
+                </div>
+                <div class="name-technology">
+                    <h2>SPACE CAPSULE</h2>
+                </div>
+                <div class="text-technology">
+                    <p> A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter
+                        the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the
+                        flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="technology-image">
+            <div class="image-technology">
+                <img src="img/technology/image-space-capsule-portrait.jpg" alt="">
+            </div>
+        </article>
     </div>
     <script src="js/main.js"></script>
 </body>
