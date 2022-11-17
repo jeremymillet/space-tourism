@@ -31,18 +31,18 @@
         <div class="nav-container">
             <ul>
                 <li id="home-button"
-                    onclick="homeOn(),moonNone(),marsNone(),europaNone(),titanNone(),commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerNone(),launchVehicleNone(),spaceCapsuleNone(),spaceportNone()">
+                    onclick="handlePage('home')">
                     <p>0 0</p> HOME
                 </li>
                 <li id="destination-button"
-                    onclick="moonNone(),homeNone(),marsNone(),europaNone(),titanNone(),commanderNone(),moonOn(),flightEngineerNone(),launchVehicleNone(),spaceCapsuleNone(),spaceportNone()">
+                    onclick="handlePage('moon')">
                     <p>0 1</p> DESTINATION
                 </li>
-                <li id="crew-button" onclick="moonNone(),homeNone(),marsNone(),europaNone(),titanNone(),commanderOn(),flightEngineerNone(),launchVehicleNone(),spaceCapsuleNone(),spaceportNone()">
+                <li id="crew-button" onclick="handlePage('commander')">
                     <p>0 2</p> CREW
                 </li>
                 <li id="technology-button"
-                    onclick="moonNone(),homeNone(),marsNone(),europaNone(),titanNone(),commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerNone(),launchVehicleOn(),spaceCapsuleNone(),spaceportNone()">
+                    onclick="handlePage('launch-vehicle')">
                     <p>0 3</p> TECHNOLOGY
                 </li>
             </ul>
@@ -65,7 +65,7 @@
             </div>
         </article>
         <article class="explore-container">
-            <div class="explore" onclick="homeNone(),moonOn()">
+            <div class="explore" onclick="handlePage('moon')">
                 <h4>EXPLORE</h4>
             </div>
         </article>
@@ -87,10 +87,10 @@
         <article class="destination-accroche">
             <div class="destination">
                 <ul>
-                    <li class="selectioner-destination">MOON</li>
-                    <li onclick="titanNone(),europaNone(),moonNone(),marsOn()">MARS</li>
-                    <li onclick="titanNone(),europaOn(),moonNone(),marsNone()">EUROPA</li>
-                    <li onclick="titanOn(),europaNone(),moonNone(),marsNone()">TITAN</li>
+                    <li onclick="handlePage('moon')" class="selectioner-destination">MOON</li>
+                    <li onclick="handlePage('mars')">MARS</li>
+                    <li onclick="handlePage('europa')">EUROPA</li>
+                    <li onclick="handlePage('titan')">TITAN</li>
                 </ul>
             </div>
             <div class="container-texte">
@@ -135,10 +135,10 @@
         <article class="destination-accroche">
             <div class="destination">
                 <ul>
-                    <li onclick="moonOn(),marsNone(),titanNone(),europaNone()">MOON</li>
+                    <li onclick="handlePage('moon')">MOON</li>
                     <li class="selectioner-destination">MARS</li>
-                    <li onclick="moonNone(),marsNone(),titanNone(),europaOn()">EUROPA</li>
-                    <li onclick="moonNone(),marsNone(),titanOn(),europaNone()">TITAN</li>
+                    <li onclick="handlePage('europa')">EUROPA</li>
+                    <li onclick="handlePage('titan')">TITAN</li>
                 </ul>
             </div>
             <div class="container-texte">
@@ -182,10 +182,10 @@
         <article class="destination-accroche">
             <div class="destination">
                 <ul>
-                    <li onclick="moonOn(),marsNone(),titanNone(),europaNone()">MOON</li>
-                    <li onclick="moonNone(),marsOn(),titanNone(),europaNone()">MARS</li>
+                    <li onclick="handlePage('moon')">MOON</li>
+                    <li onclick="handlePage('mars')">MARS</li>
                     <li class="selectioner-destination">EUROPA</li>
-                    <li onclick="moonNone(),marsNone(),titanOn(),europaNone()">TITAN</li>
+                    <li onclick="handlePage('titan')">TITAN</li>
                 </ul>
             </div>
             <div class="container-texte">
@@ -231,9 +231,9 @@
         <article class="destination-accroche">
             <div class="destination">
                 <ul>
-                    <li onclick="moonOn(),marsNone(),titanNone(),europaNone()">MOON</li>
-                    <li onclick="moonNone(),marsOn(),titanNone(),europaNone()">MARS</li>
-                    <li onclick="moonNone(),marsNone(),titanNone(),europaOn()">EUROPA</li>
+                    <li onclick="handlePage('moon')">MOON</li>
+                    <li onclick="handlePage('mars')">MARS</li>
+                    <li onclick="handlePage('europa')">EUROPA</li>
                     <li class="selectioner-destination">TITAN</li>
                 </ul>
             </div>
@@ -286,11 +286,11 @@
             </div>
             <div class="crew">
                 <div class="cercle active-cercle"></div>
-                <div class="cercle" onclick="commanderNone(),missionSpecialistOn(),pilotNone(),flightEngineerNone()">
+                <div class="cercle" onclick="handlePage('mission-specialist')">
                 </div>
-                <div class="cercle" onclick="commanderNone(),missionSpecialistNone(),pilotOn(),flightEngineerNone()">
+                <div class="cercle" onclick="handlePage('pilor')">
                 </div>
-                <div class="cercle" onclick="commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerOn()">
+                <div class="cercle" onclick="handlePage('flight-engineer')">
                 </div>
             </div>
         </article>
@@ -325,12 +325,12 @@
                 </div>
             </div>
             <div class="crew">
-                <div class="cercle" onclick="commanderOn(),missionSpecialistNone(),pilotNone(),flightEngineerNone()">
+                <div class="cercle" onclick="handlePage('commander')">
                 </div>
                 <div class="cercle active-cercle"></div>
-                <div class="cercle" onclick="commanderNone(),missionSpecialistNone(),pilotOn(),flightEngineerNone()">
+                <div class="cercle" onclick="handlePage('pilot')">
                 </div>
-                <div class="cercle" onclick="commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerOn()">
+                <div class="cercle" onclick="handlePage('flight-engineer')">
                 </div>
             </div>
         </article>
@@ -367,12 +367,12 @@
                 </div>
             </div>
             <div class="crew">
-                <div class="cercle" onclick="commanderOn(),missionSpecialistNone(),pilotNone(),flightEngineerNone()">
+                <div class="cercle" onclick="handlePage('commander')">
                 </div>
-                <div class="cercle" onclick="commanderNone(),missionSpecialistOn(),pilotNone(),flightEngineerNone()">
+                <div class="cercle" onclick="handlePage('mission-specialist')">
                 </div>
                 <div class="cercle active-cercle"></div>
-                <div class="cercle" onclick="commanderNone(),missionSpecialistNone(),pilotNone(),flightEngineerOn()">
+                <div class="cercle" onclick="handlePage('flight-engineer')">
                 </div>
             </div>
         </article>
@@ -409,11 +409,11 @@
                 </div>
             </div>
             <div class="crew">
-                <div class="cercle" onclick="commanderOn(),missionSpecialistNone(),pilotNone(),flightEngineerNone()">
+                <div class="cercle" onclick="handlePage('commander')">
                 </div>
-                <div class="cercle" onclick="commanderNone(),missionSpecialistOn(),pilotNone(),flightEngineerNone()">
+                <div class="cercle" onclick="handlePage('mission-specialist')">
                 </div>
-                <div class="cercle" onclick="commanderNone(),missionSpecialistNone(),pilotOn(),flightEngineerNone()">
+                <div class="cercle" onclick="handlePage('pilot')">
                 </div>
                 <div class="cercle active-cercle"></div>
             </div>
@@ -430,14 +430,14 @@
             <div class="cercle active-cercle">
                 <p>1</p>
             </div>
-            <div class="cercle" onclick="launchVehicleNone(),spaceCapsuleNone(),spaceportOn()">
+            <div class="cercle" onclick="handlePage('spaceport')">
                 <p>2</p>
             </div>
-            <div class="cercle" onclick="launchVehicleNone(),spaceCapsuleOn(),spaceportNone()">
+            <div class="cercle" onclick="handlePage('space-capsule')">
                 <p>3</p>
             </div>
         </div>
-        <article class="technology-accroche">
+        <article class="container-titre-technology">
             <div class="titre-technology">
                 <div>
                     <p>0 3</p>
@@ -446,6 +446,8 @@
                     <h5>SPACE LAUNCH 101</h5>
                 </div>
             </div>
+        </article>
+        <article class="technology-accroche">
             <div class="container-technology-text">
                 <div class="grade">
                     <h4>THE TERMINOLOGY...</h4>
@@ -464,23 +466,22 @@
         </article>
         <article class="technology-image">
             <div class="image-technology">
-                <img src="img/technology/image-launch-vehicle-portrait.jpg" alt="">
             </div>
         </article>
     </div>
     <div id="spaceport">
         <div class="button-technology">
-            <div class="cercle" onclick="launchVehicleOn(),spaceCapsuleNone(),spaceportNone()">
+            <div class="cercle" onclick="handlePage('launch-vehicle')">
                 <p>1</p>
             </div>
             <div class="cercle active-cercle">
                 <p>2</p>
             </div>
-            <div class="cercle" onclick="launchVehicleNone(),spaceCapsuleOn(),spaceportNone()">
+            <div class="cercle" onclick="handlePage('space-capsule')">
                 <p>3</p>
             </div>
         </div>
-        <article class="technology-accroche">
+        <article class="container-titre-technology">
             <div class="titre-technology">
                 <div>
                     <p>0 3</p>
@@ -489,6 +490,8 @@
                     <h5>SPACE LAUNCH 101</h5>
                 </div>
             </div>
+        </article>
+        <article class="technology-accroche">
             <div class="container-technology-text">
                 <div class="grade">
                     <h4>THE TERMINOLOGY...</h4>
@@ -506,23 +509,22 @@
         </article>
         <article class="technology-image">
             <div class="image-technology">
-                <img src="img/technology/image-spaceport-portrait.jpg" alt="">
             </div>
         </article>
     </div>
     <div id="space-capsule">
         <div class="button-technology">
-            <div class="cercle" onclick="launchVehicleOn(),spaceCapsuleNone(),spaceport()">
+            <div class="cercle" onclick="handlePage('launch-vehicle')">
                 <p>1</p>
             </div>
-            <div class="cercle" onclick="launchVehicleNone(),spaceCapsuleNone(),spaceportOn()">
+            <div class="cercle" onclick="handlePage('spaceport')">
                 <p>2</p>
             </div>
             <div class="cercle active-cercle">
                 <p>3</p>
             </div>
         </div>
-        <article class="technology-accroche">
+        <article class="container-titre-technology">
             <div class="titre-technology">
                 <div>
                     <p>0 3</p>
@@ -531,6 +533,8 @@
                     <h5>SPACE LAUNCH 101</h5>
                 </div>
             </div>
+        </article>
+        <article class="technology-accroche">
             <div class="container-technology-text">
                 <div class="grade">
                     <h4>THE TERMINOLOGY...</h4>
@@ -548,7 +552,6 @@
         </article>
         <article class="technology-image">
             <div class="image-technology">
-                <img src="img/technology/image-space-capsule-portrait.jpg" alt="">
             </div>
         </article>
     </div>
